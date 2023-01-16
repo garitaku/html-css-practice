@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+/* ページ全体の設定 */
+body {
+    /* body外側余白(margin) */
+    margin: 0;
+}
+
+/* コンテンツブロック */
+div {
+    background-color: #FFF6BD;
+    padding: 40px 15px;
+    font-family: sans-serif;
+}
+
+/* ヘッダーブロック */
+header {
+    /* padding:ブロック内余白(2つの場合上下&左右) */
+    color: #86C8BC;
+    padding: 25px 15px;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    font-family: 'Exo 2', sans-serif;
+    /* background-color: #ffffff; */
+}
+
+/* フッターブロック */
+footer {
+    background-color: #CEEDC7;
+    padding: 25px 15px;
+    font-size: 14px;
+    text-align: center;
+    color: #ffffff;
+
+}
+
+/* 記事 */
+article {
+    /* body背景は水色だが記事の中身は白にしろ */
+    background-color: #ffffff;
+    /* 記事内余白(padding)がないと見にくいため */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    /* 行の高さを設定(行間を開けて見やすく) */
+    line-height: 2;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    /* 幅100%の高さautoでサイズにおさまってくれる */
+    /* 親要素のコンテンツ部分の横幅の100%になる */
+    width: 100%;
+    height: auto;
+}
+
+a {
+    /* inherit:値を親要素の値と同じ値に設定する(リンクやけど色が変わらないようにする) */
+    color: inherit;
+    /* リンクのため自動で下線がつくが、それを削除する */
+    text-decoration: none;
+}
+
+/* マウスカーソルが重なったら */
+a:hover {
+    /* 半透明にする */
+    opacity: 0.7;
+}
+
+/* ナビゲーションメニュー */
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 12px;
+    color: #666666;
+    display: flex;
+    justify-content: center;
+}
+
+/* listの最後でなければ */
+li:not(:last-child) {
+    /* 右側の外側余白をつける */
+    margin-right: 20px;
+}
