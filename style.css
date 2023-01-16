@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+/* ページ全体の設定 */
+body {
+    margin: 0;
+}
+
+/* コンテンツブロック */
+div {
+    background-color: #29abe2;
+    padding: 40px 15px;
+    font-family: sans-serif;
+}
+
+/* ヘッダーブロック */
+header {
+    /* padding:ブロック内余白(2つの場合上下&左右) */
+    padding: 25px 15px;
+}
+
+/* フッターブロック */
+footer {
+    background-color: #6ac4eb;
+    padding: 25px 15px;
+
+}
+
+/* 記事 */
+article {
+    /* body背景は水色だが記事の中身は白にしろ */
+    background-color: #ffffff;
+    /* 記事内余白がないと見にくいため */
+    padding: 20px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+p {
+    /* 行の高さを設定(行間を開けて見やすく) */
+    line-height: 2;
+}
