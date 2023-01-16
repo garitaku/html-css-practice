@@ -27,36 +27,89 @@
 
 <body>
     <header>
-        <a href="index.html">FITTED</a>
-        <nav>
-            <ul>
-                <li><a href="index.html">トップへ</a></li>
-                <li><a href="about.html">サイトについて</a></li>
-                <li><a href="contact.html">お問い合わせ</a></li>
-            </ul>
-        </nav>
-
+        <div class="container">
+            <a href="index.html">FITTED</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">トップへ</a></li>
+                    <li><a href="about.html">サイトについて</a></li>
+                    <li><a href="contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div>
-        <!-- ニュースやブログ記事のように単体で完結しているコンテンツの場合articleを使用 -->
-        <article>
-            <h1>フルーツデザートを求めて街歩き</h1>
-            <time datetime="2023-01-16"><i class="bi bi-clock"></i> 2023年01月16日</time>
-            <figure>
-                <img src="img/fruits.jpg" alt="さまざまな果物が盛り付けられたフルーツプレート" srcset="">
-            </figure>
-            <p>街歩きをしているとお腹が空きます。そんな時におすすめなのがフルーツデザートです。</p>
-            <p>果物は手軽に食べることができます。熱中症予防や疲労回復などの効果もあるので、街歩きのエネルギー補給にぴったりです。</p>
-            <p>最近はふらっと立ち寄れるフルーツ専門店も増えてきました。珍しい南国フルーツのプレートやその場で作ってくれるフレッシュジュースも、美味しくてやみつきになります。</p>
-        </article>
 
-        <aside>
-            <h2>PROFILE</h2>
-            <figure>
-                <img src="img/foot.svg" alt="FITTEDの管理人" srcset="">
-            </figure>
-            <p>街歩き&食べ歩きがライフスタイル。天気がいい日はあちこちに出没しています。</p>
-        </aside>
+    <div class="contents">
+
+        <div class="container">
+            <!-- ニュースやブログ記事のように単体で完結しているコンテンツの場合articleを使用 -->
+            <article>
+                <h1>フルーツデザートを求めて街歩き</h1>
+                <time datetime="2023-01-16"><i class="bi bi-clock"></i> 2023年01月16日</time>
+                <figure>
+                    <img src="img/fruits.jpg" alt="さまざまな果物が盛り付けられたフルーツプレート" srcset="">
+                </figure>
+                <p>街歩きをしているとお腹が空きます。そんな時におすすめなのがフルーツデザートです。</p>
+                <p>果物は手軽に食べることができます。熱中症予防や疲労回復などの効果もあるので、街歩きのエネルギー補給にぴったりです。</p>
+                <p>最近はふらっと立ち寄れるフルーツ専門店も増えてきました。珍しい南国フルーツのプレートやその場で作ってくれるフレッシュジュースも、美味しくてやみつきになります。</p>
+            </article>
+
+            <div class="sub">
+                <aside class="profile">
+                    <h2>PROFILE</h2>
+                    <figure>
+                        <img src="img/foot.svg" alt="FITTEDの管理人" srcset="">
+                    </figure>
+                    <p>街歩き&食べ歩きがライフスタイル。天気がいい日はあちこちに出没しています。</p>
+                </aside>
+                <aside class="topics">
+                    <h2>TOPICS</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/tomato.jpg" alt="" srcset="">
+                                </figure>
+                                <h3>甘いトマトとすっぱいトマト</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/cycle.jpg" alt="" srcset="">
+                                </figure>
+                                <h3>自転車で行けるところまで行ってみる</h3>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/byoudouin.jpg" alt="" srcset="">
+                                </figure>
+                                <h3>秋の平等院</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/green.jpg" alt="" srcset="">
+                                </figure>
+                                <h3>緑のワンポイント</h3>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <figure>
+                                    <img src="img/time.jpg" alt="" srcset="">
+                                </figure>
+                                <h3>タイムアタックでやる気を出してみる</h3>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
     </div>
     <footer>© FITTED</footer>
 
