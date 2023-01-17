@@ -1,6 +1,7 @@
 @charset "UTF-8";
+
 /* テキストの自動拡大を無効化 */
-body{
+body {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
 }
@@ -40,6 +41,75 @@ footer {
 
 }
 
+/* トップページヒーローイメージ */
+.hero {
+    /* 背景画像読み込み。パスに注意！ */
+    background-image: url("../img/walk.jpg");
+    /* ボックスに合わせた大きさにして切り出す */
+    background-size: cover;
+    /* 中心から切り出す */
+    background-position: center;
+    height: 532px;
+    color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+    /* boxの幅高さをborderまでに変える(コンテンツ+padding+border) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.toppost {
+    padding: 15px;
+}
+
+.toppost div {
+    /* 表示をフレキシブルに */
+    display: flex;
+    /* 折り返し */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.toppost article {
+    width: 48%;
+    padding: 0;
+    flex: none;
+}
+
+.toppost h3 {
+    margin: 0;
+    font-size: 14px;
+}
+
+.toppost article:not(:nth-last-child(-m+2)) {
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-family: 'Exo 2', sans-serif;
+    text-shadow: 0 0 10px #444444;
+    text-align: center;
+}
+
+.hero p {
+    font-weight: bold;
+    text-shadow: 0 0 10px #444444;
+    margin-top: 0;
+}
+
+.hero a {
+    border: solid 2px #ffffff;
+    padding: 10px 40px;
+    border-radius: 10px;
+    background-color: rgba(41, 171, 226, 0.7);
+    margin-top: 10px;
+
+
+}
+
 /* 記事 */
 article {
     /* body背景は水色だが記事の中身は白にしろ */
@@ -53,7 +123,7 @@ h1 {
 }
 
 p {
-    /* 行の高さを設定(行間を開けて見やすく) */
+    /* 行の高さを設定(余白を通常の2倍、文字サイズは変わらない) */
     line-height: 2;
 }
 
@@ -162,6 +232,40 @@ h2 {
 }
 
 
+table{
+    /* テーブルの線を繋げる */
+    border-collapse: collapse;
+}
+th,td{
+    border: solid 1px #cccccc;
+    padding: 18px;
+}
+th{
+    /* 幅が４文字分 */
+    width: 4em;
+    text-align: left;
+    background-color: #135977;
+    color: #ffffff;
+}
+td{
+    background-color: #e8eef9;
+}
+
+input,textarea{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+textarea{
+    height: 120px;
+}
+
+input[type="submit"]{
+    background-color: #ffaa00;
+    border: none;
+    -webkit-appearance: none;
+}
+
 /* PC版の設定 */
 @media(min-width:600px) {
 
@@ -190,6 +294,22 @@ h2 {
         display: flex;
         justify-content: space-between;
     }
+
+    .hero h1{
+        font-size: 72px;
+    }
+
+    .toppost article{
+        width: 30%;
+    }
+
+    .toppost article:not(:nth-last-child(-n+2)){
+        margin-bottom: 0;
+    }
+
+    input[type="submit"]{
+        width: 250px;
+    }
 }
 
 /* 1025px以上で見てたら */
@@ -215,5 +335,5 @@ h2 {
     .profile {
         margin-top: 0;
     }
-
 }
+
