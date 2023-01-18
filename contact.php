@@ -43,7 +43,7 @@
             <article>
                 <h1>お問い合わせ</h1>
                 <p>ご意見、ご感想などがありましたら、以下の欄にご記入の上、送信してください。記事に関するご質問などもお気軽にお寄せください。</p>
-                <form action="POST">
+                <form action="action.php" method="post">
                     <p>
                         <label for="name">名前:</label>
                         <input type="text" name="name" id="name">
@@ -62,7 +62,6 @@
         </div>
     </div>
     <footer>© FITTED</footer>
-
 
 </body>
 
